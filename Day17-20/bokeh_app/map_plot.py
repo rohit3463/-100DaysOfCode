@@ -153,7 +153,7 @@ def map_tab(map_data, states):
 	available_carriers = list(set(map_data['carrier']['Unnamed: 3_level_1']))
 	available_carriers.sort()
 
-	airline_colors = Category20_16
+	airline_colors = list(Category20_16)
 	airline_colors.sort()
 
 	if 'HI' in states: del states['HI']

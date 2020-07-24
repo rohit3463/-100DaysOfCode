@@ -90,7 +90,8 @@ def density_tab(flights):
 	available_carriers = list(set(flights['name']))
 	available_carriers.sort()
 
-	airline_colors = Category20_16
+	airline_colors = list(Category20_16)
+	print(airline_colors)
 	airline_colors.sort()
 
 	carrier_selection = CheckboxGroup(labels = available_carriers, active = [0,1])
